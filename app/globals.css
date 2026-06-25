@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  /* Nossa paleta premium da Angélica Nunes */
+  --color-brand-green: #234737;
+  --color-brand-lavender: #D8C9F1;
+  --color-brand-cream: #F6F1EA;
+  --color-brand-orange: #C96A28;
+
+  /* Mapeando as nossas fontes do Next.js */
+  --font-serif: var(--font-playfair), serif;
+  --font-sans: var(--font-inter), sans-serif;
+}
+
+/* Base de estilo global para manter a fluidez */
+body {
+  background-color: var(--color-brand-cream);
+  color: var(--color-brand-green);
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-serif);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Suaviza as imagens e cartões */
+img, div {
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
