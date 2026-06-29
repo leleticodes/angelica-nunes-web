@@ -16,7 +16,7 @@ export default function SobrePage() {
         <div className="relative">
           <div className="absolute inset-0 bg-brand-orange/20 rounded-3xl translate-x-4 translate-y-4" />
           <img 
-            src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=800" 
+            src="/images/hero-bg.jpeg" 
             alt="Ateliê de Confeitaria" 
             className="rounded-3xl relative z-10 shadow-xl"
           />

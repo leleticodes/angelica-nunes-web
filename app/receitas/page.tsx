@@ -5,19 +5,19 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const posts = [
   {
-    titulo: "O Segredo do Ponto Perfeito",
-    resumo: "Descubra como a temperatura e o cuidado no manuseio transformam a textura dos nossos doces.",
-    conteudo: "Para atingir o ponto perfeito, a temperatura ambiente deve ser controlada e o manuseio deve ser suave...",
+    titulo: "Bolo de Laranja com Amêndoas",
+    resumo: "Este bolo de laranja com amêndoas é uma preparação que convida a explorar como a temperatura e o cuidado no manuseio transformam a textura das sobremesas.",
+    conteudo: "O Bolo de Laranja com Amêndoas é uma receita que propõe descobrir como a temperatura e o cuidado no manuseio transformam a textura dos doces. Para preparar a massa, misture 160g de açúcar, raspas de 2 laranjas e 120g de manteiga derretida até formar uma farofa. Em seguida, adicione 2 ovos, o suco de 2 laranjas e 100g de iogurte grego, misturando bem com um fouet. Posteriormente, incorpore 190g de farinha de trigo, 50g de farinha de amêndoa e 1 colher de sopa de fermento de forma suave. Para a cobertura, prepare uma farofinha com lâminas de amêndoa, açúcar, raspas de laranja e um pouco de farinha de amêndoa. Por fim, despeje a massa em uma forma untada, espalhe a farofinha por cima e asse a 180°C por um período de 35 a 45 minutos.  Como você planeja servir este bolo, prefere acompanhar com algum café especial ou chá?",
     tempo: "5 min",
-    imagem: "https://images.unsplash.com/photo-1557308535-ee8e16104d47?q=80&w=600"
+  imagem: "/images/bolinho.jpeg"
   },
-  {
-    titulo: "Armazenamento Premium",
-    resumo: "Dicas essenciais para garantir que a sua encomenda chegue impecável para os convidados.",
-    conteudo: "O armazenamento ideal exige locais frescos e longe de umidade. Cada detalhe importa...",
-    tempo: "3 min",
-    imagem: "https://images.unsplash.com/photo-1596462758594071c498305c6?q=80&w=600"
-  }
+{
+  titulo: "Bolo de Chocolate com Recheio de Creme",
+    resumo: "O Bolo de Chocolate com Recheio de Creme é uma sobremesa clássica que valoriza o contraste entre a intensidade do cacau e a suavidade do recheio lácteo.",
+      conteudo: "O Bolo de Chocolate com Recheio de Creme é uma sobremesa clássica, ideal para quem busca equilibrar a intensidade do chocolate com a suavidade de um recheio cremoso. Para preparar a massa, comece batendo 3 ovos com 1 xícara de açúcar; em seguida, adicione 1/2 xícara de óleo, 1 xícara de chocolate em pó e 2 xícaras de farinha de trigo. Finalize a massa incorporando 1 xícara de água quente e 1 colher de sopa de fermento em pó, misturando delicadamente antes de levar ao forno a 180°C por aproximadamente 40 minutos. Enquanto o bolo assa, prepare o recheio misturando em uma panela 1 lata de leite condensado, 1 xícara de leite com 1 colher de sopa de amido de milho dissolvido e 1 colher de chá de essência de baunilha, cozinhando em fogo baixo até engrossar. Após o bolo esfriar completamente, corte-o ao meio, aplique o recheio de creme e finalize conforme sua preferência.\nVocê prefere servir esse bolo em temperatura ambiente ou gelado?",
+        tempo: "3 min",
+          imagem: "/images/bolo-chocolate.jpeg"
+}
 ];
 
 export default function ReceitasPage() {
@@ -27,7 +27,7 @@ export default function ReceitasPage() {
     <div className="py-24 px-6 max-w-4xl mx-auto">
       <div className="text-center mb-20">
         <span className="text-brand-orange font-sans text-xs uppercase tracking-[0.3em] font-bold">Expertise & Cuidado</span>
-        <h1 className="font-serif text-5xl text-brand-green mt-4 mb-6">Receitas & Dicas</h1>
+        <h1 className="font-serif text-5xl text-brand-green mt-4 mb-6">Receitas da Casa</h1>
         <div className="w-24 h-[1px] bg-brand-lavender mx-auto" />
       </div>
 
@@ -45,7 +45,7 @@ export default function ReceitasPage() {
             <div className="flex flex-col justify-center flex-1">
               <h2 className="font-serif text-2xl text-brand-green mb-2">{post.titulo}</h2>
               <p className="font-sans text-brand-green/70 leading-relaxed mb-6">{post.resumo}</p>
-              <button 
+              <button
                 onClick={() => setSelecionado(post)}
                 className="text-brand-orange font-sans text-sm font-semibold hover:text-brand-green transition-colors flex items-center gap-2"
               >
@@ -59,12 +59,12 @@ export default function ReceitasPage() {
       {/* Modal do Artigo */}
       <AnimatePresence>
         {selecionado && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
             className="fixed inset-0 bg-brand-green/30 backdrop-blur-md z-50 flex items-center justify-center p-4"
             onClick={() => setSelecionado(null)}
           >
-            <motion.div 
+            <motion.div
               initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
               className="bg-brand-cream p-8 md:p-12 rounded-[2rem] max-w-2xl w-full shadow-2xl relative max-h-[80vh] overflow-y-auto"
               onClick={(e) => e.stopPropagation()}

@@ -9,7 +9,8 @@ export default function Hero() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-105 animate-[pulse_8s_infinite_alternate]"
         style={{ 
-          backgroundImage: `linear-gradient(to bottom, rgba(35, 71, 55, 0.8), rgba(35, 71, 55, 0.4)), url('https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1920')` 
+          backgroundImage: `linear-gradient(to bottom, rgba(35, 71, 55, 0.8), rgba(35, 71, 55, 0.4)),
+          url('/images/heroh.jpeg')` 
         }}
       />
 

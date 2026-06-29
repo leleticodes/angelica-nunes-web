@@ -7,27 +7,27 @@ export default function FeaturedProducts() {
   const produtos = [
     {
       id: 1,
-      nome: "Macarons de Lavanda e Frutas Vermelhas",
+      nome: "Cheesecake de Frutas Vermelhas com Base de Amêndoas",
       categoria: "Doces Finos",
-      imagem: "https://images.unsplash.com/photo-1569864358642-9d1684040f43?q=80&w=600",
+      imagem: "/images/cheesecake.jpeg",
     },
     {
       id: 2,
-      nome: "Éclair de Pistache com Raspas de Laranja",
-      categoria: "Doces Finos",
-      imagem: "https://images.unsplash.com/photo-1607958996333-41aef7caefaa?q=80&w=600",
+      nome: "Bolo Cuca Recheado com Goiabada",
+      categoria: "Encomendas Especiais",
+      imagem: "/images/bolo-recheado.jpeg",
     },
     {
       id: 3,
-      nome: "Quiche de Alho-Poró e Gruyère",
-      categoria: "Salgados Gourmet",
-      imagem: "https://images.unsplash.com/photo-1623156312480-2fa2f939e605?q=80&w=600",
+      nome: "Bolo de Chocolate com Ganache Belga",
+      categoria: "Doces Finos",
+      imagem: "/images/bolo-chocolate.jpeg",
     },
     {
       id: 4,
-      nome: "Entremet de Chocolate Belga e Damasco",
+      nome: "Pão de Fermentação Natural e Ervas Finas",
       categoria: "Encomendas Especiais",
-      imagem: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=600",
+      imagem: "/images/pao-caseiro.jpeg",
     },
   ];
 

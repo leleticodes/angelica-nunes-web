@@ -5,22 +5,22 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const itensCardapio = [
   { 
-    nome: "Bolo Red Velvet", 
+    nome: "Bolo de Chocolate com Amêndoas", 
     categoria: "Doces", 
-    imagem: "https://images.unsplash.com/photo-1569864358642-9d1684040f43?q=80&w=600", 
-    descricao: "Massa aveludada com um toque sutil de cacau, combinada perfeitamente com nosso recheio artesanal de cream cheese." 
+    imagem: "/images/bolo-chocolate.jpeg", 
+    descricao: "Massa aveludada com um toque sutil de cacau, combinada perfeitamente com nosso recheio artesanal de ganache Belga e toques de amêndoas." 
   },
   { 
-    nome: "Macarons de Lavanda", 
+    nome: "Torta de Frutas Vermelhas com Creme de Baunilha", 
     categoria: "Doces", 
-    imagem: "https://images.unsplash.com/photo-1569864358642-9d1684040f43?q=80&w=600", 
-    descricao: "A elegância da confeitaria francesa clássica com a delicadeza floral da lavanda." 
+    imagem: "/images/torta.jpeg", 
+    descricao: "Doce delicioso com uma textura cremosa e o sabor rico das frutas vermelhas frescas, finalizado com um toque de baunilha." 
   },
   { 
-    nome: "Quiche de Alho-Poró", 
+    nome: "Pão caseiro de Ervas Finas", 
     categoria: "Salgados", 
-    imagem: "https://images.unsplash.com/photo-1623156312480-2fa2f939e605?q=80&w=600", 
-    descricao: "Massa crocante feita à mão com um recheio cremoso e aromático de alho-poró e queijo gruyère." 
+    imagem: "/images/pao-caseiro.jpeg", 
+    descricao: "Massa crocante feita à mão com um recheio aromático de alho-poró e queijo gruyère." 
   },
 ];
 
