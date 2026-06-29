@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from 'next/link';
 
 export default function Hero() {
   return (
@@ -43,19 +44,26 @@ export default function Hero() {
           Feito à mão com técnica e amor. Criamos experiências sofisticadas e afetivas em cada detalhe.
         </motion.p>
 
-        {/* Botões de Ação */}
+{/* Botões de Ação */}
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.6 }}
           className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
         >
-          <button className="bg-brand-orange text-white px-8 py-4 rounded-full font-sans font-medium text-sm tracking-wider uppercase shadow-lg hover:bg-brand-orange/90 hover:shadow-brand-orange/20 hover:-translate-y-0.5 transition-all duration-300">
+          <Link 
+            href="/contato"
+            className="bg-brand-orange text-white px-8 py-4 rounded-full font-sans font-medium text-sm tracking-wider uppercase shadow-lg hover:bg-brand-orange/90 hover:shadow-brand-orange/20 hover:-translate-y-0.5 transition-all duration-300 text-center"
+          >
             Solicitar orçamento
-          </button>
-          <button className="border border-brand-cream/40 text-brand-cream px-8 py-4 rounded-full font-sans font-medium text-sm tracking-wider uppercase backdrop-blur-xs hover:bg-brand-cream hover:text-brand-green hover:-translate-y-0.5 transition-all duration-300">
+          </Link>
+
+          <Link 
+            href="/cardapio"
+            className="border border-brand-cream/40 text-brand-cream px-8 py-4 rounded-full font-sans font-medium text-sm tracking-wider uppercase backdrop-blur-xs hover:bg-brand-cream hover:text-brand-green hover:-translate-y-0.5 transition-all duration-300 text-center"
+          >
             Explorar cardápio
-          </button>
+          </Link>
         </motion.div>
       </div>
 
